@@ -109,6 +109,7 @@ loop
 			company.come == false
 end
 
+
 3. Order Pizza from Pizza Hut
  3.1. Log in PizzaHut.com
  3.2. select the perfect pizza("cheese pizza")
@@ -149,20 +150,65 @@ end
 4. Design a code sharing platform (eg: Github).
  4.1.user log in 
  4.2.create repository
- 4.3.upload files
- 4.4.
-platform 
+ 4.3.manage files
+Platform 
 	Data: Name, Website
 	Behaviors:
+User 
+	Data: Username, Password
+	Behaviors: login, register, manage files
 Sequence of Flow - Invoke Objects with Behaviors
 
+Platform github
+User peter
+
+if github is available
+	if peter has registered before
+		peter.login(username, password)
+	else
+		peter.register(username, password, email)
+	peter.creatNewRepository(name)
+		if create new file
+			peter.createNewFile(name)
+		if upload file
+			peter.uploadFile(name)
+		if fild file
+			peter.findFile(name)
+	
+else
+	peter.cantShareCode
+end
 5. Design a soft-drink/snacks vending machine.
- 5.1.customer choose drink
- 5.2.customer put money in the machine
- 5.3.cutomer get drink
+ 5.1.show inventory
+ 5.2.get selected item from customer
+ 5.3.receive money and return changes
+ 5.4.update inventory
  
-soft-drink/snacks
+Machine
+	Data: Goods, Price
+	Behaviors: receive money, return changes
+Soft-drink
 	Data: Name, Price, 
-	Behaviors:
+	Behaviors: getPicked, isSelected
+Customer
+	Data:Name
+	Behavior: select, purchase, receive changes
 Sequence of Flow - Invoke Objects with Behaviors
+Soft-drink coke
+Machine machine
+
+Customer peter
+
+machine.display(goods)
+if coke.isSelected()
+	if machine.cokeAmount > 0
+		peter.purchase(cash, "coke");
+		machine.returnChanges(coke.price, cash)
+		machine.update()
+	else
+		peter.cantBuy
+end
+	
+		
+
 

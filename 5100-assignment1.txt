@@ -111,24 +111,45 @@ end
 
 3. Order Pizza from Pizza Hut
  3.1. Log in PizzaHut.com
- 3.2. select the perfect pizza
+ 3.2. select the perfect pizza("cheese pizza")
  3.3. make the order
  3.4. receive pizza
-Pizza Hut
-	Data: URL, Phone number
+
+PizzaHut
+	Data: URL, Phone number, cart
 	Behaviors:
 Pizza
 	Data: price, 
 	Behaviors:
-Myself
-	Data: Name, Address, Phone number
+Customer
+	Data: Name, Address, Phone number, e-mail, username, password, credit card
 	Behaviors: order
+	
 Sequence of Flow - Invoke Objects with Behaviors
+
+Customer peter
+PizzaHut pizzahut.com
+
 if pizzahut.com is available
+	if peter has registered before
+		peter.login(username, password)
+	else
+		peter.register(username, password, email)
+	if "cheese pizza".exsits()
+		peter.select("cheese pizza", amount)
+		peter.order(cart, credit card, address)
+		peter.receivePizza();
+	else
+		peter.notBuyingPizza()
+	
+else
+	peter.cantBuyPizza
+end
+
 4. Design a code sharing platform (eg: Github).
  4.1.user log in 
- 4.2.
- 4.3.
+ 4.2.create repository
+ 4.3.upload files
  4.4.
 platform 
 	Data: Name, Website
@@ -136,10 +157,10 @@ platform
 Sequence of Flow - Invoke Objects with Behaviors
 
 5. Design a soft-drink/snacks vending machine.
- 5.1.
- 5.2.
- 5.3.
- 5.4.
+ 5.1.customer choose drink
+ 5.2.customer put money in the machine
+ 5.3.cutomer get drink
+ 
 soft-drink/snacks
 	Data: Name, Price, 
 	Behaviors:

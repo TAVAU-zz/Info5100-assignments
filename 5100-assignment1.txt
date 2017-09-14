@@ -172,7 +172,7 @@ if github is available
 			peter.createNewFile(name)
 		if upload file
 			peter.uploadFile(name)
-		if fild file
+		if find file
 			peter.findFile(name)
 	
 else

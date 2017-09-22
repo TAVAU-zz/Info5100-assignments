@@ -1,3 +1,7 @@
+/* Good Work
+ * Score = 10
+ * Try to include few more objects in future.
+ */
 1. Hiking
  1.1. Rent a ReachNow to drive to mountain rainier on weekends with friends
  1.2. On the way, fill the gas

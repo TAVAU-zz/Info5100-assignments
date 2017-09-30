@@ -1,3 +1,8 @@
+/* Good Work
+ * Score 9.5 + extra credit 3.5; Total Score = 10
+ *
+ */
+
 package Assignment2;
 
 import java.util.HashMap;
@@ -14,7 +19,8 @@ public class Assignment2 {
 
     }
 
-    //1
+    //1 
+    // score 1.5
     private static final double HOURS1 = 36.0;
     private static final double HOURS2 = 36.0 + 5;
     private static final double HOURS3 = 48.0;
@@ -23,7 +29,7 @@ public class Assignment2 {
     private static final double SALARY2 = 15.0 * 1.5;
     private static final double SALARY3 = 15.0 * 2;
 
-    public double employeeSalary(double hours) {
+    public double employeeSalary(double hours) { // for hours greater than 48 the pay should be equal to 48hrs but not 0
         double salary = 0.0;
         if (hours <= 0) {
             return 0.0;
@@ -42,7 +48,7 @@ public class Assignment2 {
     }
 
     //2
-    //
+    //score 2
     public int addDigits(int input) {
         int sum = 0;
         if (input < 10) {
@@ -64,6 +70,7 @@ public class Assignment2 {
     }
 
     //3
+    // score 2
     public void printPerfectNumber(int n) {
         for (int i = 1; i < n; i++) {
             int divisor = 0;
@@ -81,6 +88,7 @@ public class Assignment2 {
 }
 
 //4
+// score 2 + extra credit 0.5
 class Pizza {
     String type;
     double price;
@@ -111,6 +119,7 @@ class Pizza {
 }
 
 //5
+// score 2 + extra credit 1
 class Customer{
     String name;
     HashMap<Pizza, Integer> pizzaOrder;
@@ -138,6 +147,7 @@ class Customer{
 }
 
 //6
+// extra credit 2
 class Solution {
     public static void triangle() {
         Scanner input = new Scanner(System.in);

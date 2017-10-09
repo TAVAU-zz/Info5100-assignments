@@ -1,8 +1,11 @@
+/* good work
+ * Score 9.5 + extra credit 2; total score 10
+ */
 package Assignment3;
 
 import java.util.Arrays;
 
-public class Book {
+public class Book { // score 1
     int size;
     int price;
     String name;
@@ -36,7 +39,7 @@ public class Book {
 
 //2.
 
-class Clock {
+class Clock { // score 1
     String time;
     //since time is a String, the method should return a String, not void
     void getTime() {
@@ -58,7 +61,7 @@ class Clock {
             s.checkIfTwoStringsAreAnagram("asa a", " aaa   s");
         }
     //3. remove vowels in a string
-    public String removeVowelsFromString(String input) {
+    public String removeVowelsFromString(String input) { //score 2
         if (input == null) {
             return null;
         }
@@ -96,10 +99,10 @@ class Clock {
 
     //4.
 
-        public boolean checkIfTwoStringsAreAnagram(String s1, String s2) {
+        public boolean checkIfTwoStringsAreAnagram(String s1, String s2) { // score 1.5
             boolean isAnagram = false;
             if (s1 == null && s2 == null) {
-                isAnagram = true;
+                isAnagram = true; // if both are null, they are not anagrams
                 System.out.println(isAnagram);
                 return isAnagram;
             }
@@ -107,7 +110,7 @@ class Clock {
                 System.out.println(isAnagram);
                 return isAnagram;
             }
-            String new_s1 = s1.replaceAll(" ", "");
+            String new_s1 = s1.replaceAll(" ", "");// we asked to consider spaces and special characters
             String new_s2 = s2.replaceAll(" ", "");
 
             if (new_s1.length() == new_s2.length()) {
@@ -122,7 +125,7 @@ class Clock {
         }
 
 }
-class Calculator {
+class Calculator { // score 4 + extra credit 2
     public double add(double num1, double num2) {
         return num1 + num2;
     }

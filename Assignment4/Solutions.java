@@ -1,3 +1,7 @@
+/* Good work
+ * score 9.5 + extra credit 2; total score 10;
+ */
+ 
 package Assignment4;
 
 public class Solutions {
@@ -5,9 +9,9 @@ public class Solutions {
         System.out.println(changeString("2-4A0r7-4k", 4));
     }
 
-    public static String changeString(String str, int k) {
+    public static String changeString(String str, int k) { // score 2
 
-        String dashDeleted = str.replaceAll("-", "");
+        String dashDeleted = str.replaceAll("-", ""); // we asked not to use direct methods
         StringBuilder sb = new StringBuilder(dashDeleted);
         int length = dashDeleted.length();
         int dash;
@@ -35,7 +39,7 @@ public class Solutions {
     }
 }
 
-class Tool {
+class Tool { // score 1.5
     protected int strength;
     protected char type;
 
@@ -43,8 +47,8 @@ class Tool {
         this.strength = strength;
     }
 
-    protected boolean fight(Tool tool) {
-        if (this.type == 'r') {
+    protected boolean fight(Tool tool) { // you have to override this method in child classes. If I want to add another tool
+        if (this.type == 'r') {     // this method fails
             if (tool.type == 's') {
                 return this.strength * 2 > tool.strength;
             } else if (tool.type == 'p') {
@@ -103,7 +107,7 @@ class RockPaperScissorsGame {
     }
 }
 
-class IpAddress {
+class IpAddress { // score 2
     String decimal;
     String[] octets;
 
@@ -130,7 +134,7 @@ class IpAddress {
     }
 
 }
-class Student {
+class Student { // score 2
 
     String name;
     int id;
@@ -197,7 +201,7 @@ class Course {
     }
 }
 
-class Solution5 {
+class Solution5 { // score 2
     public String intToRoman(int num) {
         String M[] = {"", "M", "MM", "MMM"};
         String C[] = {"", "C", "CC", "CCC", "CD", "D", "DC", "DCC", "DCCC", "CM"};
@@ -207,7 +211,7 @@ class Solution5 {
     }
 }
 
-class Solution6 {
+class Solution6 { // extra credit 2
     public double findMedianSortedArrays(int[] nums1, int[] nums2) {
         int len = nums1.length + nums2.length;
         if (len % 2 == 1) {

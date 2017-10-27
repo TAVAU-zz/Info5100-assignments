@@ -1,6 +1,6 @@
 package MidTermPartB;
 
-public class Solution1 {
+public class Solution1 { // score 6
     public static int[] reverseEvenIndices(int[] nums) {
         if (nums.length % 2 == 1) {
             nums =  revEvenImpl(nums, 0, nums.length - 1);

@@ -1,6 +1,6 @@
 package MidTermPartB;
 
-public class Solution3 {
+public class Solution3 { // score 7
     public int minMoves(int[] nums) {
         if (nums.length == 0) return 0;
         int min = nums[0];

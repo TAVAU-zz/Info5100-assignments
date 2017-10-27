@@ -1,6 +1,6 @@
 package MidTermPartB;
 
-public class Solution2 {
+public class Solution2 { // score 7
     public int arrangeCoins(int n) {
         int start = 0;
         int end = n;

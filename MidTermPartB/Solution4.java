@@ -1,6 +1,6 @@
 package MidTermPartB;
 
-public class Solution4 {
+public class Solution4 { // score 10
     public static void main(String[] args) {
         Solution4 s = new Solution4();
         System.out.println(s.countNumberOfPossibleWays(3,2, 4));

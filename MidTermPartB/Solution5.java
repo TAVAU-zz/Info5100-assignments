@@ -1,3 +1,6 @@
+/* good work
+ * score 30 + extra credit 7
+ */
 package MidTermPartB;
 import java.util.*;
 
@@ -28,7 +31,7 @@ public class Solution5 {
             System.out.println(c);
         }
     }
-    public ArrayList<Cell> findPath(int[][] maze) {
+    public ArrayList<Cell> findPath(int[][] maze) { //you fixed the maze, but you should find path for any maze that is passed
         ArrayList<Cell> res = new ArrayList<Cell>();
         int n = maze.length;
         int sol[][] = {{0, 0, 0, 0},

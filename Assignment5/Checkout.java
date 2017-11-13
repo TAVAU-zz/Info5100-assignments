@@ -36,7 +36,7 @@ public class Checkout {
     @Override
     public String toString() {
         String res = "";
-        System.out.println("        " + DessertShoppe.STORE_NAME);
+        System.out.println("        " + DessertShoppe.STORE_NAME); // try printf or string.format to leave space
         System.out.print("        ");
         for( int i = 0; i < DessertShoppe.STORE_NAME.length();i++){
             System.out.print("-");

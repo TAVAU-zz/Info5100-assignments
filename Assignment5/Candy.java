@@ -1,7 +1,7 @@
 package Assignment5;
 
 public class Candy extends DessertItem {
-    double weight;
+    double weight; // access should be private
     int pricePerPound;
     public Candy(String name, double weight, int pricePerPound) {
         super(name);
@@ -17,7 +17,7 @@ public class Candy extends DessertItem {
     public String toString() {
         String output = "";
 
-        output += weight + " lbs. @ ";
+        output += weight + " lbs. @ ";// use stringBuilder rather that string cocatination
         output += DessertShoppe.cents2dollarsAndCents(pricePerPound) + " /lb.\n";
         if (getName().length() <= DessertShoppe.MAX_OF_ITEM_NAME) {
             output += getName();

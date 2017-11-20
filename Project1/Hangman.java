@@ -1,3 +1,7 @@
+/* Good Work
+ * Score 18.5
+ * You are not displaying previously guessed letters
+ */
 package Project1;
 
 import java.util.*;
@@ -5,7 +9,7 @@ import java.io.*;
 
 class Hangman {
 
-    ArrayList<String> words = new ArrayList<>();
+    ArrayList<String> words = new ArrayList<>(); // access should be private
     ArrayList<Character> correctList;
     ArrayList<Character> wrongList;
     boolean[] foundLetters;

@@ -1,4 +1,7 @@
-    package Assignment6;
+/* Good Work
+    Score 10
+ */
+package Assignment6;
 
     import static org.junit.Assert.*;
 

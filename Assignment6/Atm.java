@@ -4,7 +4,7 @@ import java.util.*;
 
 public class Atm {
 
-    double availableAmountInMachine;
+    double availableAmountInMachine; //  should be private
     double transactionFee;
     static List<UserData> userList;
     UserData current;

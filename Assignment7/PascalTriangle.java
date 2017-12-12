@@ -3,7 +3,7 @@ package Assignment7;
 import java.util.ArrayList;
 import java.util.List;
 
-public class PascalTriangle {
+public class PascalTriangle {  // score 2
     public static void main(String[] args) {
         List<List<Integer>> res = printPascalTriangle(6);
         for (int i = 0; i < res.size(); i++) {

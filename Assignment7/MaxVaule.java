@@ -1,9 +1,9 @@
 package Assignment7;
 
-public class MaxVaule extends Thread{
+public class MaxVaule extends Thread{ // score 1.5
     private int lo ,hi;
     private int[] arr;
-    private int max = 0;
+    private int max = 0; // Should be Integer.MIN_VALUE
 
     public MaxVaule(int[] arr, int lo, int hi) {
         this.lo = lo;

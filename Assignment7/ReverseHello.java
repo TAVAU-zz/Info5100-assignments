@@ -1,6 +1,6 @@
 package Assignment7;
 
-public class ReverseHello extends Thread{
+public class ReverseHello extends Thread{ // score 2
     int counter;
 
     public ReverseHello(int counter){

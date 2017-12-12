@@ -1,6 +1,9 @@
+/* Good Work
+ * Score 10 + extra credit 2; Total score 10
+ */
 package Assignment7;
 
-public class findPartition {
+public class findPartition { // extra credit 2
     static boolean isSubsetSum (int arr[], int n, int sum)
     {
         if (sum == 0)

@@ -3,7 +3,7 @@ package Assignment8;
 import java.io.IOException;
 import java.util.*;
 
-public class FileCounter {
+public class FileCounter { // score 3
     private int characterCount, wordCount, lineCount;
 
     public FileCounter() {

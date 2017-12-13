@@ -4,7 +4,7 @@ import java.io.*;
 import java.util.ArrayList;
 
 
-public class MyJson {
+public class MyJson {// score 3
 
     private static ArrayList<Vehicle> readAndGetVehicles(File file) throws IOException {
         ArrayList<Vehicle> cars = new ArrayList<>();

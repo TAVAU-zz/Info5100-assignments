@@ -1,3 +1,6 @@
+/* Good WOrk
+ * Total score 10
+ */
 package Assignment8;
 
 import java.io.*;
